@@ -147,7 +147,7 @@ img {
   margin-bottom: 94px;
   max-width: 1600px;
   height: 600px;
-  outline: 2px solid black;
+  /* outline: 2px solid black; */
   margin-left: auto;
   margin-right: auto;
   background-color: grey;
@@ -197,11 +197,42 @@ img {
   margin-right: 30px;
 }
 
+.features-item::before {
+  display: block;
+  content: '';
+  height: 120px;
+  background-size: 70px 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f5f4fa;
+  /* outline: 2px solid black; */
+
+  border-radius: 4px;
+
+  margin-bottom: 30px;
+}
+
+.icon-antenna::before {
+  background-image: url('../images/features/antenna.svg');
+}
+
+.icon-clock::before {
+  background-image: url('../images/features/clock.svg');
+}
+
+.icon-diagram::before {
+  background-image: url('../images/features/diagram.svg');
+}
+
+.icon-astronaut::before {
+  background-image: url('../images/features/astronaut.svg');
+}
+
 .features-item:nth-child(4n) {
   margin-right: 0;
 }
 
-.future-pic-container {
+/* .future-pic-container {
   display: flex;
   padding-left: 100px;
   padding-right: 100px;
@@ -217,10 +248,10 @@ img {
 .future-pic {
   margin-left: auto;
   margin-right: auto;
-}
+} */
 
 .features-tittle {
-  /* margin-top: 0;
+  margin-top: 0;
   margin-bottom: 10px;
 
   color: var(--tittle-text-color);
@@ -228,8 +259,14 @@ img {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
-  text-transform: uppercase; */
+  text-transform: uppercase;
 
+  /* margin: 0;
+  height: 0;
+  color: transparent; */
+}
+
+.features-tittle-main {
   margin: 0;
   height: 0;
   color: transparent;
