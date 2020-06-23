@@ -134,6 +134,43 @@ img {
   color: var(--accent-color);
 }
 
+/* .auth-nav .item::before {
+  display: inline-block;
+  content: '';
+  width: 20px;
+  height: 16px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+} */
+
+.auth-nav .icon-envelope::before {
+  display: inline-block;
+  content: '';
+  width: 16px;
+  height: 11px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url('../images/header/envelope.svg');
+
+  margin-right: 10px;
+}
+
+.auth-nav .icon-smartphone::before {
+  display: inline-block;
+  content: '';
+  width: 10px;
+  height: 15px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url('../images/header/smartphone.svg');
+
+  margin-right: 10px;
+}
+
 /* Hero */
 
 .hero {
@@ -349,20 +386,51 @@ img {
   /* flex-wrap: wrap; */
 }
 
-.social-item {
-  width: 270px;
-  margin-right: 10px;
+.social-item::after {
+  display: inline-block;
+  content: '';
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  /* background-size: contain; */
+  background-repeat: no-repeat;
+  background-position: center;
 
-  justify-content: space-evenly;
+  /* margin-right: 10px;
+  padding-bottom: 21px; */
+
+  /* background-color: greenyellow; */
+
+  /* outline: solid 1px teal; */
+}
+
+.icon-inst::after {
+  background-image: url('../images/social-links/instagram.svg');
+  margin-left: 32px;
+}
+
+.icon-twit::after {
+  background-image: url('../images/social-links/twitter.svg');
+}
+
+.icon-face::after {
+  background-image: url('../images/social-links/facebook.svg');
+}
+
+.icon-link::after {
+  background-image: url('../images/social-links/linkedin.svg');
+  margin-right: 32px;
+}
+
+.social-item {
+  width: 206px;
+  margin-right: 10px;
+  /* justify-content: space-evenly; */
   padding-bottom: 21px;
 }
 
 .social-item:last-child {
   margin-right: 0;
-}
-
-.social-item:nth-child(4n + 1) {
-  margin-right: 11px;
 }
 
 .team-tittle,
@@ -403,7 +471,7 @@ img {
 
 .team-name {
   margin-top: 30px;
-  margin-bottom: 10;
+  margin-bottom: 10px;
 
   font-weight: 500;
   font-size: 16px;
