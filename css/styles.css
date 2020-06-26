@@ -319,6 +319,14 @@ img {
 .team {
   margin-top: 0px;
   margin-bottom: 94px;
+
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #f5f4fa;
 }
 
 .team-list {
