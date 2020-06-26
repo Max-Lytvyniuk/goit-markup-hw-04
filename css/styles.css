@@ -565,7 +565,8 @@ footer {
 .footer {
   display: flex;
   align-items: baseline;
-  padding-top: 48px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
   /* background-color: green; */
 }
@@ -578,9 +579,9 @@ footer {
   margin-right: 69px;
 }
 
-.footer-flex-item {
+/* .footer-flex-item {
   margin-bottom: 9px;
-}
+} */
 
 /* .invite-flex {
   display: flex;
