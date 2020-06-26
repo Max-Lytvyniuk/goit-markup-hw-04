@@ -341,6 +341,10 @@ img {
 
 .social-list {
   display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 206px;
+  padding-bottom: 21px;
   /* flex-wrap: wrap; */
 }
 
@@ -387,7 +391,6 @@ img {
 
   width: 206px;
   margin-right: 10px;
-  padding-bottom: 21px;
 }
 
 .social-item:last-child {
