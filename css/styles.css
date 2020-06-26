@@ -497,9 +497,26 @@ img {
   letter-spacing: 0.03em;
 }
 
-.clients-link .link:hover,
-.clients-link .link:focus {
-  color: var(--accent-color);
+.clients-border {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid var(--primary-social-color);
+  fill: var(--primary-social-color);
+
+  height: 90px;
+  border-radius: 4px;
+}
+
+.clients-icon {
+}
+
+.clients-border:hover,
+.clients-border:focus {
+  border: 1px solid var(--accent-color);
+  fill: var(--accent-color);
 }
 
 /* button! */
