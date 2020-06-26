@@ -12,6 +12,7 @@
   --primary-white-color: #ffffff;
   --text-address-color-footer: rgba(255, 255, 255, 0.6);
   --copyright-color: rgba(255, 255, 255, 0.4);
+  --primary-social-color: #afb1b8;
 }
 body {
   background-color: #ffffff;
@@ -343,25 +344,25 @@ img {
   /* flex-wrap: wrap; */
 }
 
-.social-item::after {
+/* .social-item::after {
   display: inline-block;
   content: '';
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  /* background-size: contain; */
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 
-  /* margin-right: 10px;
-  padding-bottom: 21px; */
+  margin-right: 10px;
+  padding-bottom: 21px;
 
-  /* background-color: greenyellow; */
+  background-color: greenyellow;
 
-  /* outline: solid 1px teal; */
-}
+  outline: solid 1px teal;
+} */
 
-.icon-inst::after {
+/* .icon-inst::after {
   background-image: url('../images/social-links/instagram.svg');
   margin-left: 32px;
 }
@@ -377,17 +378,41 @@ img {
 .icon-link::after {
   background-image: url('../images/social-links/linkedin.svg');
   margin-right: 32px;
-}
+} */
 
 .social-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   width: 206px;
   margin-right: 10px;
-  /* justify-content: space-evenly; */
   padding-bottom: 21px;
 }
 
 .social-item:last-child {
   margin-right: 0;
+}
+
+.social-border-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  height: 44px;
+  fill: var(--primary-social-color);
+  /* background-color: red; */
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.social-border-icon:hover,
+.social-border-icon:focus {
+  fill: var(--primary-white-color);
+  background-color: var(--accent-color);
 }
 
 .team-tittle,
