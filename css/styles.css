@@ -221,7 +221,30 @@ img {
   margin-right: 30px;
 }
 
-.features-item::before {
+.features-item:nth-child(4n) {
+  margin-right: 0;
+}
+
+.features-border-icon {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  height: 120px;
+  background-color: #f5f4fa;
+
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.features-icon {
+  align-items: center;
+  width: 70px;
+  height: 70px;
+}
+
+/* .features-item::before {
   display: block;
   content: '';
   height: 120px;
@@ -229,7 +252,6 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-color: #f5f4fa;
-  /* outline: 2px solid black; */
 
   border-radius: 4px;
 
@@ -250,11 +272,7 @@ img {
 
 .icon-astronaut::before {
   background-image: url('../images/features/astronaut.svg');
-}
-
-.features-item:nth-child(4n) {
-  margin-right: 0;
-}
+} */
 
 /* .future-pic-container {
   display: flex;
