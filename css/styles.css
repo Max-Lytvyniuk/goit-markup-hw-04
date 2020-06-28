@@ -411,6 +411,8 @@ img {
   justify-content: center;
   border-radius: 50%;
   height: 44px;
+  width: 44px;
+
   fill: var(--primary-social-color);
   /* background-color: red; */
 }
@@ -676,6 +678,7 @@ footer {
   justify-content: center;
   border-radius: 50%;
   height: 44px;
+  width: 44px;
   fill: var(--primary-white-color);
   background-color: rgba(255, 255, 255, 0.1);
 }
